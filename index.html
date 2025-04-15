@@ -11,16 +11,115 @@
     <label for="nome"></label><br>
     <input type="text" name="nome"id = "nome" value="" placeholder="Nome:" required>
     <br>
-    <label for="credencial"></label><br>
-    <input type="text" name="credencial"id = "credencial" value="" placeholder="Credencial:" required> 
+    <label for="sobrenome"></label><br>
+    <input type="text" name="sobrenome" id = "sobrenome" value="" placeholder="Sobrenome:" required>
+    <br>
+    <label for="Idade"></label><br>
+    <input type="number" name="Idade"id = "Idade" value="" placeholder="Idade:" required>
+    <br>
+    <label for="e-mail"></label><br>
+    <input type="email" name="e-mail" id = "e-mail" value="" placeholder="E-mail:" required>
+    <br>
+    <label for="telefone"></label><br>
+    <input type="tel" name="telefone"id = "telefone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Telefone:" required>
+    <br>
+    <label for="endereço"></label><br>
+    <input type="text" name="endereço"id = "endereço" value="" placeholder="Endereço:" required>
     <br>
     <label for="senha"></label><br>
-    <input type="number" name="senha"id = "senha" value="" placeholder="Senha:" required> 
+    <input type="password" name="senha"id = "senha" value="" placeholder="Senha:" required> 
+    <br>
+    <label for="credencial"></label><br>
+    <input type="text" name="credencial"id = "credencial" value="" placeholder="Credencial:" required> 
     <br>
     <label for="OTP"></label><br>
     <input type="number" name="OTP"id = "OTP" value="" placeholder="OTP:"required> 
     <br>
-    <button type="button" onclick="validarLogin()">Enviar OTP</button>
+    <label for="CPF"></label><br>
+    <input type="number" name="cpf"id = "cpf" value="" placeholder="CPF:" required>
+    <br>
+    <label for="CEP"></label><br>
+    <input type="number" name="CEP"id = "CEP" value="" placeholder="CEP:" required>
+    <br>
+    <label for="Cidade"></label><br>
+    <input type="text" name="Cidade"id = "Cidade" value="" placeholder="Cidade:" required>
+    <br>
+    <label for="Estado"></label><br>
+    <input type="text" name="Estado"id = "Estado" value="" placeholder="Estado:" required>
+    <br>
+    <label for="Bairro"></label><br>
+    <input type="text" name="Bairro"id = "Bairro" value="" placeholder="Bairro:" required>
+    <br>
+    <label for="Rua"></label><br>
+    <input type="text" name="Rua"id = "Rua" value="" placeholder="Rua:" required>
+    <br>
+    <label for="numero"></label><br>
+    <input type="number" name="numero"id = "numero" value="" placeholder="Nº da casa:" required>
+    <br>
+    <label for="Complemento"></label><br>
+    <input type="text" name="Complemento"id = "Complemento" value="" placeholder="Complemento:">
+    <br>
+    <label for="Data de nascimento"></label><br>
+    <input type="date" name="Data de nascimento"id = "Data de nascimento" value="" placeholder="Data de nascimento:" required>
+    <br>
+    <label for="RG"></label><br>
+    <input type="number" name="RG"id = "RG" value="" placeholder="RG:" required>
+    <br>
+    <p>Escolha seu gênero:</p>
+    <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+    <br>
+    <p>Qual cor do produto você deseja??</p>
+    <label for="cor"></label><br>
+    <input type="color" name="cor"id = "cor" value="" required>
+    <br>
+    <label for="quantidade">Quantos produtos você deseja?(Entre 0 e 10):</label>
+    <input type="number" id="quantidade" name="quantitidade" min="0" max="10">
+    <br>
+    <label for="Profissão"></label><br>
+    <input type="text" name="Profissão"id = "Profissão" value="" placeholder="Profissão:" required>
+    <br>
+    <label for="inicial">Adicione sua página inicial:</label>
+    <input type="url" id="inicial" name="inicial" required>
+    <br>
+    <label for="semana">Selecione uma semana:</label>
+    <input type="week" id="semana" name="semana">
+    <br>
+    <label for="tempo">Selecione a hora de entrega desejada:</label>
+    <input type="time" id="tempo" name="tempo">
+    <br>
+    <p>Escolha a empresa de entrega:</p>
+    <input type="radio" id="sedex" name="entrega" value="sedex">
+        <label for="sedex">Sedex</label><br>
+        <input type="radio" id="Vuva" name="entrega" value="Vuva">
+        <label for="Vuva">Vuva</label><br>
+        <input type="radio" id="Jaca" name="entrega" value="Jaca">
+        <label for="Jaca">Jaca</label><br>
+    <br>
+    <p>Escolha a forma de entrega:</p>
+    <input type="radio" id="Entrega rápida" name="entregas" value="Entrega rápida">
+        <label for="Entrega rápida">Entrega rápida</label><br>
+        <input type="radio" id="Entrega normal" name="entregas" value="Entrega normal">
+        <label for="Entrega normal">Entrega normal</label><br>
+    <br>
+    <p>Escolha a forma de pagamento:</p>
+    <input type="radio" id="boleto" name="pagamento" value="boleto">
+        <label for="boleto">Boleto</label><br>
+        <input type="radio" id="Cartão" name="pagamento" value="Cartão">
+        <label for="Cartão">Cartão</label><br>
+        <input type="radio" id="Pix" name="pagamento" value="Pix">
+        <label for="Pix">Pix</label><br>
+    <br>
+    <p>Selecione o arquivo com a foto do seu cartão</p>
+    <label for="myfile">Selecione um arquivo:</label>
+    <input type="file" id="myfile" name="myfile">
+    <br>
+    <input type="image" src="imagens/img_submit.gif" alt="Submit" width="48" height="48">
+    <input type="button" onclick="alert('Formulario enviado!')" value="Enviar!">
+    <input type="reset" value="Reset">
+
 </main>
 </body>
 </html>

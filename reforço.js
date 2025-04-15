@@ -1,4 +1,4 @@
-function validarLogin() {
+function formularioLogin() {
     const nome = document.getElementById ('nome').ariaValueMax.trim();
     if (!nome){
         alert ('Por favor, preencher o nome');
