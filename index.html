@@ -7,7 +7,9 @@
 </head>
 <body>
     <header>
+        <div class="img">
         <img src="imagens/8.png" alt="">
+        </div>
     </header>
 <main>
 <div class="borda">
@@ -45,6 +47,13 @@
     <label for="RG"></label><br>
     <input type="number" name="RG"id = "RG" value="" placeholder="RG:" required>
     <br>
+    <p>Coloque aqui a sua data de nascimento:</p>
+    <label for="Data de nascimento"></label><br>
+    <input type="date" name="Data de nascimento"id = "Data de nascimento" value="" placeholder="Data de nascimento:" required>
+    <br>
+    <label for="Profissão"></label><br>
+    <input type="text" name="Profissão"id = "Profissão" value="" placeholder="Profissão:" required>
+    <br>
     <label for="CEP"></label><br>
     <input type="number" name="CEP"id = "CEP" value="" placeholder="CEP:" required>
     <br>
@@ -66,29 +75,23 @@
     <label for="Complemento"></label><br>
     <input type="text" name="Complemento"id = "Complemento" value="" placeholder="Complemento:">
     <br>
-    <label for="Data de nascimento"></label><br>
-    <input type="date" name="Data de nascimento"id = "Data de nascimento" value="" placeholder="Data de nascimento:" required>
-    <br>
     <p>Escolha seu gênero:</p>
     <input type="radio" id="feminino" name="genero" value="feminino">
         <label for="feminino">Feminino</label><br>
         <input type="radio" id="masculino" name="genero" value="masculino">
         <label for="masculino">Masculino</label><br>
     <br>
-    <p>Qual cor do produto você deseja??</p>
+    <p>Qual cor do produto você deseja?</p>
     <label for="cor"></label><br>
     <input type="color" name="cor"id = "cor" value="" required>
     <br>
     <label for="quantidade">Quantos produtos você deseja?(Entre 0 e 10):</label>
     <input type="number" id="quantidade" name="quantitidade" min="0" max="10">
     <br>
-    <label for="Profissão"></label><br>
-    <input type="text" name="Profissão"id = "Profissão" value="" placeholder="Profissão:" required>
-    <br>
     <label for="inicial">Adicione sua página inicial:</label>
     <input type="url" id="inicial" name="inicial" required>
     <br>
-    <label for="semana">Selecione uma semana:</label>
+    <label for="semana">Selecione a semana de:</label>
     <input type="week" id="semana" name="semana">
     <br>
     <label for="tempo">Selecione a hora de entrega desejada:</label>
