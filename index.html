@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <source src="reforço.js">
 </head>
 <body>
     <header>
@@ -20,39 +21,36 @@
     <label for="sobrenome"></label><br>
     <input type="text" name="sobrenome" id = "sobrenome" value="" placeholder="Sobrenome:" required>
     <br>
-    <label for="Idade"></label><br>
-    <input type="number" name="Idade"id = "Idade" value="" placeholder="Idade:" required>
+    <label for="idade"></label><br>
+    <input type="number" name="idade"id = "idade" value="" placeholder="Idade:" required>
     <br>
-    <label for="e-mail"></label><br>
+    <label for="email"></label><br>
     <input type="email" name="e-mail" id = "e-mail" value="" placeholder="E-mail:" required>
     <br>
     <label for="telefone"></label><br>
     <input type="tel" name="telefone"id = "telefone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Telefone:" required>
     <br>
-    <label for="endereço"></label><br>
-    <input type="text" name="endereço"id = "endereço" value="" placeholder="Endereço:" required>
+    <label for="endereco"></label><br>
+    <input type="text" name="endereco"id = "endereco" value="" placeholder="Endereço:" required>
     <br>
     <label for="senha"></label><br>
     <input type="password" name="senha"id = "senha" value="" placeholder="Senha:" required> 
     <br>
-    <label for="credencial"></label><br>
-    <input type="text" name="credencial"id = "credencial" value="" placeholder="Credencial:" required> 
-    <br>
     <label for="OTP"></label><br>
     <input type="number" name="OTP"id = "OTP" value="" placeholder="OTP:"required> 
     <br>
-    <label for="CPF"></label><br>
+    <label for="cpf"></label><br>
     <input type="number" name="cpf"id = "cpf" value="" placeholder="CPF:" required>
     <br>
     <label for="RG"></label><br>
     <input type="number" name="RG"id = "RG" value="" placeholder="RG:" required>
     <br>
     <p>Coloque aqui a sua data de nascimento:</p>
-    <label for="Data de nascimento"></label><br>
-    <input type="date" name="Data de nascimento"id = "Data de nascimento" value="" placeholder="Data de nascimento:" required>
+    <label for="DN"></label><br>
+    <input type="date" name="DN"id = "DN" value="" placeholder="Data de nascimento:" required>
     <br>
-    <label for="Profissão"></label><br>
-    <input type="text" name="Profissão"id = "Profissão" value="" placeholder="Profissão:" required>
+    <label for="Profissao"></label><br>
+    <input type="text" name="Profissao"id = "Profissao" value="" placeholder="Profissão:" required>
     <br>
     <label for="CEP"></label><br>
     <input type="number" name="CEP"id = "CEP" value="" placeholder="CEP:" required>
@@ -122,6 +120,9 @@
     <p>Selecione o arquivo com a foto do seu cartão</p>
     <label for="myfile">Selecione um arquivo:</label>
     <input type="file" id="myfile" name="myfile">
+    <br>
+    <label for="codigo"></label><br>
+    <input type="number" name="codigo"id = "codigo" value="" placeholder="Código de segurança do Cartão:" required> 
     <br>
     <input type="image" src="imagens/img_submit.gif" alt="Submit" width="48" height="48">
     <input type="button" onclick="alert('Pedido enviado!')" value="Enviar!">
