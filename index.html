@@ -25,7 +25,7 @@
     <input type="number" name="idade"id = "idade" value="" placeholder="Idade:" required>
     <br>
     <label for="email"></label><br>
-    <input type="email" name="e-mail" id = "e-mail" value="" placeholder="E-mail:" required>
+    <input type="email" name="email" id = "email" value="" placeholder="E-mail:" required>
     <br>
     <label for="telefone"></label><br>
     <input type="tel" name="telefone"id = "telefone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Telefone:" required>
@@ -87,14 +87,15 @@
     <input type="number" id="quantidade" name="quantitidade" min="0" max="10">
     <br>
     <label for="inicial">Adicione sua página inicial:</label>
-    <input type="url" id="inicial" name="inicial" required>
+    <input type="url" id="inicial" name="inicial">
     <br>
     <label for="semana">Selecione a semana de:</label>
-    <input type="week" id="semana" name="semana">
+    <input type="week" id="semana" name="semana" required>
     <br>
     <label for="tempo">Selecione a hora de entrega desejada:</label>
     <input type="time" id="tempo" name="tempo">
     <br>
+    <fieldset>
     <p>Escolha a empresa de entrega:</p>
     <input type="radio" id="sedex" name="entrega" value="sedex">
         <label for="sedex">Sedex</label><br>
@@ -102,13 +103,17 @@
         <label for="Vuva">Vuva</label><br>
         <input type="radio" id="Jaca" name="entrega" value="Jaca">
         <label for="Jaca">Jaca</label><br>
+    </fieldset>
     <br>
+    <fieldset>
     <p>Escolha a forma de entrega:</p>
     <input type="radio" id="Entrega rápida" name="entregas" value="Entrega rápida">
         <label for="Entrega rápida">Entrega rápida</label><br>
         <input type="radio" id="Entrega normal" name="entregas" value="Entrega normal">
         <label for="Entrega normal">Entrega normal</label><br>
+    </fieldset>
     <br>
+    <fieldset>
     <p>Escolha a forma de pagamento:</p>
     <input type="radio" id="boleto" name="pagamento" value="boleto">
         <label for="boleto">Boleto</label><br>
@@ -116,6 +121,7 @@
         <label for="Cartão">Cartão</label><br>
         <input type="radio" id="Pix" name="pagamento" value="Pix">
         <label for="Pix">Pix</label><br>
+    </fieldset>
     <br>
     <p>Selecione o arquivo com a foto do seu cartão</p>
     <label for="myfile">Selecione um arquivo:</label>
@@ -124,8 +130,7 @@
     <label for="codigo"></label><br>
     <input type="number" name="codigo"id = "codigo" value="" placeholder="Código de segurança do Cartão:" required> 
     <br>
-    <input type="image" src="imagens/img_submit.gif" alt="Submit" width="48" height="48">
-    <input type="button" onclick="alert('Pedido enviado!')" value="Enviar!">
+    <button type="submit" onclick="Enviar()">Enviar</button>
     <input type="reset" value="Reset">
 </div>
 

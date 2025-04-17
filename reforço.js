@@ -1,13 +1,36 @@
-function alertn() {
+function Enviar() {
     let nome = document.getElementById ('nome').ariaValueMax.trim();
-    if (!nome || isNaN(nome)){
+    let sobrenome = document.getElementById ('sobrenome').ariaValueMax.trim();
+    let idade = parseInt (document.getElementById('idade').value,10);
+    let email = document.getElementById('email').ariaValueMax.trim();
+    let telefone = parseInt (document.getElementById('telefone').ariaValueMax.trim());
+    let endereco = parseInt (document.getElementById('endereco').ariaValueMax.trim());
+    let senha = document.getElementById('senha').value.trim;
+    let OTP = parseInt(document.getElementById('OTP').value, 10);
+    let cpf = document.getElementById('cpf').value.trim();
+    let RG = document.getElementById('RG').value.trim();
+    let DN = document.getElementById('DN');
+    let Profissao = document.getElementById('Profissao');
+    let CEP = document.getElementById('CEP');
+    let Cidade = document.getElementById('Cidade');
+    let Estado = document.getElementById('Estado');
+    let Bairro = document.getElementById('Bairro');
+    let Rua = document.getElementById('Rua');
+    let numero = parseInt(document.getElementById('numero'));
+    let cor = document.querySelector('cor').value;
+    let quantidade = parseInt(document.getElementById('quantidade'));
+    let semana = document.querySelector('semana');
+    let codigo = parseInt(document.getElementById('codigo'));
+
+
+   if (!nome || isNaN(nome)){
         alert ('Por favor, preencher o nome');
         return;
      }else{
         console.log (nome);
      }
 
-     const sobrenome = document.getElementById ('sobrenome').ariaValueMax.trim();
+   
     if (!sobrenome){
         alert ('Por favor, preencher o sobrenome!');
         return;
@@ -15,7 +38,7 @@ function alertn() {
         console.log (sobrenome);
      }
    
-     const idade = parseInt (document.getElementById('idade').value,10);
+     
     if(isNaN(idade) || idade < 18){
       alert('A idade para completar a compra deve ser maior que 18 anos!');
       return;
@@ -23,7 +46,7 @@ function alertn() {
       console.log(idade);
     }
 
-    const email = document.getElementById('email').ariaValueMax.trim();
+    
     if (!email){
       alert('Por favor, preencher o E-mail!');
       return;
@@ -31,7 +54,7 @@ function alertn() {
       console.log(email);
     }
     
-     const telefone = parseInt (document.getElementById('telefone').ariaValueMax.trim());
+     
      if (!telefone || !telefone.lenght == 11 || isNaN){
        alert ('Por favor, insira seu telefone!');
        return;
@@ -39,7 +62,7 @@ function alertn() {
        console.log (telefone);
     }
 
-    const endereco = parseInt (document.getElementById('endereco').ariaValueMax.trim());
+    
      if (!endereco){
        alert ('Por favor, insira seu endereço!');
        return;
@@ -47,7 +70,7 @@ function alertn() {
        console.log (endereco);
     }
     
-    const senha = parseInt(document.getElementById('senha').value.trim);
+    
     if (!senha || !senha.lenght == 10 || isNaN(senha)){
        alert('Por favor, insira uma senha válida.');
        return;
@@ -55,7 +78,7 @@ function alertn() {
        console.log(senha);
     }
     
-    const OTP = parseInt(document.getElementById('OTP').value, 10);
+    
     if (!OTP || !OTP.lenght == 5 || isNaN(OTP)) {
        alert('Por favor, insira um código válido.');
        return;
@@ -63,7 +86,7 @@ function alertn() {
        console.log(OTP);
     }
     
-    const cpf = document.getElementById('cpf').value.trim();
+    
     if (!cpf || !cpf.lenght == 11 || isNaN(cpf)){
       alert('Por favor, insira um CPF válido');
       return;
@@ -71,7 +94,7 @@ function alertn() {
       console.log(cpf);
     }
 
-    const RG = document.getElementById('RG').value,10;
+   
     if (!RG || !RG.lenght == 8 || isNaN(RG)){
       alert('Por favor, insira um RG válido!');
       return;
@@ -79,7 +102,7 @@ function alertn() {
       console.log(RG);
     }
 
-    const DN = document.getElementById('DN');
+    
     if(DN.value == ''){
       alert("Data não preenchida!");
       return;
@@ -87,7 +110,7 @@ function alertn() {
       console.log(DN);
    }
 
-   const Profissao = document.getElementById('Profissao');
+   
    if(!Profissao){
       alert("Insira sua profissão!");
       return;
@@ -95,7 +118,7 @@ function alertn() {
       console.log(Profissao);
    }
 
-   const CEP = document.getElementById('CEP');
+  
    if (!CEP || !CEP.lenght == 8 || isNaN(CEP)){
       alert('Por favor, insira um CEP válido!');
       return;
@@ -103,5 +126,74 @@ function alertn() {
       console.log(CEP);
     }
 
-    
-    }
+   
+   if(!Cidade || isNaN(Cidade)){
+      alert('Por favor, insira sua cidade!');
+      return;
+   }else{
+   console.log(Cidade);
+   }
+
+   
+   if(!Estado || isNaN(Estado)){
+      alert('Por favor, insira seu Estado!');
+      return;
+   }else{
+   console.log(Estado);
+   }
+
+   
+   if(!Bairro || isNaN(Bairro)){
+      alert('Por favor, insira seu Bairro!');
+      return;
+   }else{
+   console.log(Bairro);
+   }
+
+   
+   if(!Rua || isNaN(Rua)){
+      alert('Por favor, insira sua Rua!');
+      return;
+   }else{
+   console.log(Rua);
+   }
+
+   
+   if(!numero || isNaN(numero)){
+      alert('Por favor, insira o número da sua casa!');
+      return;
+   }else{
+   console.log(numero);
+   }
+
+  
+   if(!cor || isNaN(cor)){
+      alert('Por favor, insira a cor desejada do produto')
+      return;
+   }else{
+      console.log(cor)
+   }
+
+   
+   if(!quantidade || isNaN(quantidade)){
+      alert('Por favor, insira a quantidade requerida!')
+      return;
+   }else{
+      console.log(quantidade)
+   }
+
+   
+   if(!semana || isNaN(semana)){
+      alert('Por favor, insira a semana que você deseja receber o produto!')
+      return;
+   }else{
+      console.log(semana);
+   }
+
+   if(!codigo || isNaN(codigo)){
+      alert('Por favor, insira um código de segurança válido!')
+      return;
+   }else{
+      console.log(codigo)
+   }
+   }
